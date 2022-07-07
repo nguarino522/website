@@ -1,3 +1,3 @@
 # website
 
-personal website, built on ruby on rails framework or sinatra micro framework? will decide later
+This is my personal website currently building using Sinatra a simple DSL for creating web applications in Ruby.
