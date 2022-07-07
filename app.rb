@@ -2,9 +2,6 @@ require 'sinatra'
 require "erb"
 configure { set :server, :puma }
 
-set :root, File.dirname(__FILE__)
-set :public_folder, 'public'
-
 # get '/' do
 #   'fuck you josh'
 # end

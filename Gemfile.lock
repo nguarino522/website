@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (10.4.7.0)
+      execjs (~> 2)
+    execjs (2.8.1)
+    materialize-sass (1.0.0.1)
+      autoprefixer-rails (>= 6.0.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
@@ -21,6 +26,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  materialize-sass
   puma
   sinatra
 
