@@ -10,6 +10,10 @@ get '/' do
   erb :base
 end
 
+# get '/' do
+#   erb :background, :layout => :base
+# end
+
 get '/time' do
   code = "<%= Time.now %>"
   erb code
@@ -23,6 +27,10 @@ get '/sinatra' do
   erb :sinatra
  end
 
-get '/footer' do
-  erb :footer, :layout => :sinatra
+# get '/footer' do
+#   erb :footer, :layout => :sinatra
+# end
+
+get '/background' do
+  erb :background
 end
