@@ -7,11 +7,11 @@ configure { set :server, :puma }
 # end
 
 get '/' do
-  erb :base
+  erb :index
 end
 
-# get '/' do
-#   erb :background, :layout => :base
+# get '/:background' do
+#   erb :base, { :locals => params, :layout => false }
 # end
 
 get '/time' do
@@ -25,7 +25,7 @@ end
 
 get '/sinatra' do
   erb :sinatra
- end
+end
 
 # get '/footer' do
 #   erb :footer, :layout => :sinatra
