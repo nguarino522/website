@@ -1,5 +1,5 @@
   require 'sinatra'
-  require "erb"
+  # require "erb"
 
   # configure { set :server, :puma }
 
