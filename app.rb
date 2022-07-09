@@ -1,7 +1,5 @@
 require 'sinatra'
 require "erb"
-require "sinatra/reloader" if development?
-require 'sinatra/activerecord'
 
 configure { set :server, :puma }
 
@@ -12,6 +10,7 @@ configure { set :server, :puma }
 get '/' do
   erb :index
 end
+
 
 # get '/:background' do
 #   erb :base, { :locals => params, :layout => false }
