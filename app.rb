@@ -1,38 +1,38 @@
-require 'sinatra'
-require "erb"
+  require 'sinatra'
+  require "erb"
 
-configure { set :server, :puma }
-
-
-# set :bind, '192.168.1.9'
+  # configure { set :server, :puma }
 
 
-get '/' do
-  erb :index
-end
+  # set :bind, '192.168.1.9'
 
 
-# get '/:background' do
-#   erb :base, { :locals => params, :layout => false }
-# end
+  get '/' do
+    erb :index
+  end
 
-get '/time' do
-  code = "<%= Time.now %>"
-  erb code
-end
 
-get '/test' do
- erb :test
-end
+  # get '/:background' do
+  #   erb :base, { :locals => params, :layout => false }
+  # end
 
-get '/sinatra' do
-  erb :sinatra
-end
+  get '/time' do
+    code = "<%= Time.now %>"
+    erb code
+  end
 
-# get '/footer' do
-#   erb :footer, :layout => :sinatra
-# end
+  get '/test' do
+    erb :test
+  end
 
-get '/background' do
-  erb :background
-end
+  get '/sinatra' do
+    erb :sinatra
+  end
+
+  # get '/footer' do
+  #   erb :footer, :layout => :sinatra
+  # end
+
+  get '/background' do
+    erb :background
+  end
