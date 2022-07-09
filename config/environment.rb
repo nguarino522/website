@@ -1,6 +1,7 @@
 require 'bundler'
 Bundler.require
-
-set :database_file, “./database.yml”
-
+ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3',
+  :database => 'db/database.sqlite'
+)
 require_all 'app'

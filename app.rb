@@ -1,12 +1,18 @@
+class ApplicationController < Sinatra::Base
+
 require 'sinatra'
 require "erb"
 configure { set :server, :puma }
 
+configure do
+  set :public_folder, 'public'
+  set :views, 'app/views'
+  enable :sessions
+  set :session_secret, "session_secret"
+end
+
 # set :bind, '192.168.1.9'
 
-# get '/' do
-#   'fuck you josh'
-# end
 
 get '/' do
   erb :index
@@ -35,4 +41,6 @@ end
 
 get '/background' do
   erb :background
+end
+
 end

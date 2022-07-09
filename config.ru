@@ -1,2 +1,4 @@
-require './app'
-run Sinatra::Application
+require './config/environment'
+
+use Rack::MethodOverride
+run ApplicationController
