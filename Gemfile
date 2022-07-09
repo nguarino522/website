@@ -6,7 +6,9 @@ source "https://rubygems.org"
 
 gem 'sinatra-contrib'
 gem 'json'
-
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'pg'
 gem 'sinatra'
 gem 'puma'
 gem 'bootstrap'

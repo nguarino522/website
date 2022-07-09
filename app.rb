@@ -1,6 +1,7 @@
 require 'sinatra'
 require "erb"
 require "sinatra/reloader" if development?
+require 'sinatra/activerecord'
 
 configure { set :server, :puma }
 
