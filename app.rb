@@ -2,6 +2,8 @@ require 'sinatra'
 require "erb"
 configure { set :server, :puma }
 
+# set :bind, '192.168.1.9'
+
 # get '/' do
 #   'fuck you josh'
 # end

@@ -5,5 +5,5 @@ source "https://rubygems.org"
 # gem "rails"
 gem 'sinatra'
 gem 'puma'
-gem 'materialize-sass'
-get 'erb'
+gem 'bootstrap'
+gem 'erb'
