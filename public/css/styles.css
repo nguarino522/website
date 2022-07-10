@@ -17,6 +17,11 @@
     font-size: 4rem;
     color: var(--var-color);
     font-weight: bold;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 2s;
 }
 
 .light::before{
@@ -25,7 +30,7 @@
     text-shadow: 0px 0px 20px var(--var-color);
     filter: blur(10px) brightness(0);
     animation: flicker 2s linear forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 @keyframes flicker{
@@ -90,13 +95,32 @@
   }
 
 
+  @keyframes slide-from-left {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 50%;
+    }
+  }
+
+
   #hi1 {
     color: antiquewhite;
-
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 1.5s;
   }
 
   #hi2 {
     color: antiquewhite;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 2.5s;
   }
 
 #index {
@@ -105,3 +129,4 @@
     position: absolute;
     align-items: center;
 }
+
