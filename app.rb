@@ -28,7 +28,6 @@ get '/contact' do
 end
 
 
-
   # get '/:background' do
   #   erb :base, { :locals => params, :layout => false }
   # end
