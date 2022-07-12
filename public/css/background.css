@@ -3,7 +3,7 @@ html, body{
 	height:100%; 
 	padding:0px; 
 	margin:0px;
-	overflow: hidden;
+	overflow: visible;
 	background: #191d1e; /* Old browsers */
 	background: -moz-linear-gradient(0deg,  #191d1e 50%, #283139 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
@@ -12,11 +12,11 @@ html, body{
 	background: -ms-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* IE10+ */
 	background: linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	background-attachment: fixed
+	background-attachment: scroll;
 }
 
 #projector {
-  position: absolute; 
+  position: relative; 
   top: 0px;
   left: 0px;
   width:100%;
@@ -26,7 +26,7 @@ html, body{
 .center-div {
 	width:580px;
     height:374px;
-    position:absolute;
+    position:relative;
     left:50%;
     top:50%;
     margin-left: -290px;
@@ -35,7 +35,7 @@ html, body{
 
 #preloaderDiv
 {
-	position:absolute;
+	position:relative;
 	left:50%;
     top:50%;
     margin-left: -27px;
@@ -49,7 +49,7 @@ html, body{
 
 #date2014
 {
-	position:absolute;
+	position:relative;
 	padding-left: 210px;
 	padding-top:15px;
 	opacity:0;
