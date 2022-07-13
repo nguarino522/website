@@ -58,9 +58,29 @@ footer {
   .social-network a.icoLinkedin:hover {
     background-color: #007bb7;
   }
+
+  .social-network a.icoGitLab:hover {
+    background-color: #fc6d26;
+  }
   
+  .social-network a.icoTwitter:hover {
+    background-color: #1DA1F2;
+  }
+
+  .social-network a.icoFacebook:hover {
+    background-color: #3b5998;
+  }
+
+  .social-network a.icoGoogle:hover {
+    background-color: #de5246;
+  }
+
   .social-network a.icoGitHub:hover i,
-  .social-network a.icoLinkedin:hover i {
+  .social-network a.icoLinkedin:hover i,
+  .social-network a.icoGitHub:hover i,
+  .social-network a.icoTwitter:hover i,
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoGoogle:hover i {
     color: #fff;
   }
   

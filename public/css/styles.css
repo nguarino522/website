@@ -34,12 +34,6 @@ html, body{
   align-items: center;
 }
 
-nav{
-    color: #16222A;
-}
-
-
-
 .light{
     justify-content: center;
     --var-color:rgb(22, 217, 231);
@@ -138,3 +132,4 @@ nav{
 .content{
     min-height: 100vh;
 }
+
