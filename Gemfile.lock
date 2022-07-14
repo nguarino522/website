@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cowsay (0.3.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
@@ -22,7 +21,6 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  cowsay (~> 0.3.0)
   puma
   sinatra
 
