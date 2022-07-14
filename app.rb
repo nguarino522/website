@@ -6,9 +6,14 @@ require 'sinatra'
 # set :bind, '192.168.1.9'
 
 
+
+
 class Application < Sinatra::Base
   
   get '/' do
+    before do
+      redirect request.url.sub('http', 'https') unless request.secure?
+    end
     erb :index
   end
 
