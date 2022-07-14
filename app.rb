@@ -43,3 +43,8 @@ end
 get '/sinatra' do
   erb :sinatra
 end
+
+get '/api/test' do
+  content_type :json
+  { test: "this is a test" }.to_json
+end 
