@@ -11,9 +11,6 @@ require 'sinatra'
 class Application < Sinatra::Base
   
   get '/' do
-    before do
-      redirect request.url.sub('http', 'https') unless request.secure?
-    end
     erb :index
   end
 
