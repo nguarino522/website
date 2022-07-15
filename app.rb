@@ -13,7 +13,7 @@ class Application < Sinatra::Base
     end
   end
 
-  before "/about" do
+  before "/*" do
     https_required!
   end
 
