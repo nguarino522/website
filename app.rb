@@ -50,7 +50,7 @@ class Application < Sinatra::Base
     erb :sinatra
   end
 
-  get '/api/test' do
+  get '/api' do
     content_type :json
     { test: "this is a test" }.to_json
   end
