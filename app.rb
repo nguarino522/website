@@ -1,15 +1,22 @@
 require 'sinatra'
 
-
 # require "erb"
 # configure { set :server, :puma }
 # set :bind, '192.168.1.9'
 
-
-
-
 class Application < Sinatra::Base
   
+  def https_required!
+    if settings.production? && request.scheme == 'http'
+        headers['Location'] = request.url.sub('http', 'https')
+        halt 301, "https required\n"
+    end
+  end
+
+  before "/about" do
+    https_required!
+  end
+
   get '/' do
     erb :index
   end
@@ -30,10 +37,6 @@ class Application < Sinatra::Base
     erb :contact
   end
 
-
-  # get '/:background' do
-  #   erb :base, { :locals => params, :layout => false }
-  # end
   get '/time' do
     code = "<%= Time.now %>"
     erb code
@@ -51,7 +54,6 @@ class Application < Sinatra::Base
     content_type :json
     { test: "this is a test" }.to_json
   end
-
 
 end
 
