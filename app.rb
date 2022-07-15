@@ -55,5 +55,9 @@ class Application < Sinatra::Base
     { test: "this is a test" }.to_json
   end
 
+  before "/api/test" do
+    https_required!
+  end
+
 end
 
