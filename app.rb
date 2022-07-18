@@ -33,6 +33,10 @@ class Application < Sinatra::Base
     erb :projects
   end
 
+  get '/running' do
+    erb :running
+  end
+
   get '/contact' do
     erb :contact
   end
