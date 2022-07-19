@@ -1,0 +1,51 @@
+#aboutmetitle {
+    padding: 20px;
+}
+
+#imagedes {
+    padding: 20px;
+}
+
+#aboutfull {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+#carouselimages {
+    /* padding: 50px; */
+    /* background-color: #008060; */
+    /* background-color: #0093E9; */
+    background-color: #006199;
+    background-image: linear-gradient(160deg, #006199 0%, #37958a 100%);
+    transition: background-color 3s linear;
+    animation-name: fadeBackground;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    width: 40vw;
+    margin: auto;
+    border-style: solid;
+    border-width: thick;
+}
+
+#carouselinside {
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 1.5s;
+    text-align: center;
+}
+
+@keyframes fadeBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity 1;
+    }
+}

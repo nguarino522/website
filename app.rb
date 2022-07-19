@@ -41,6 +41,14 @@ class Application < Sinatra::Base
     erb :contact
   end
 
+  get '/coffee' do
+    erb :coffee
+  end
+  
+
+
+
+  #test stuff
   get '/time' do
     code = "<%= Time.now %>"
     erb code
