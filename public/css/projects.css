@@ -1,0 +1,42 @@
+
+#projects {
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    margin-top: 11vh;
+  }
+
+#githubimage  {
+    background-color: #0d0d0d;
+    border-style: solid;
+    border-width: thick;
+    border-color: #1a1a1a;
+    padding: 20px;
+}
+
+#projecttitle {
+    padding: 100px;
+}
+
+#project1 {
+    color: antiquewhite;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 1.5s;
+}
+
+#project2 {
+    color: antiquewhite;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    animation-name: slide-from-left;
+    animation-duration: 2.5s;
+}
+
+#projectdescription {
+    padding: 100px;
+}
