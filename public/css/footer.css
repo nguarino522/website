@@ -11,85 +11,85 @@ footer {
     margin-top: auto;
   }
   
-  footer a {
+ footer a {
     color: #fff;
     font-size: 14px;
     transition-duration: 0.2s;
-  }
+}
   
-  footer a:hover {
+footer a:hover {
     color: #FA944B;
     text-decoration: none;
-  }
+}
   
-  .copy {
+.copy {
     font-size: 12px;
     padding: 10px;
     border-top: 1px solid #FFFFFF;
-  }
+}
   
-  .footer-middle {
+.footer-middle {
     padding-top: 2em;
     color: white;
-  }
+}
   
     
   /* footer social icons */
   
-  ul.social-network {
+ul.social-network {
     list-style: none;
     display: inline;
     margin-left: 0 !important;
     padding: 0;
-  }
+}
   
-  ul.social-network li {
+ul.social-network li {
     display: inline;
     margin: 0 5px;
-  }
+}
   
   
   /* footer social icons */
   
-  .social-network a.icoGitHub:hover {
+.social-network a.icoGitHub:hover {
     background-color: #171515;
-  }
+}
   
-  .social-network a.icoLinkedin:hover {
+.social-network a.icoLinkedin:hover {
     background-color: #007bb7;
-  }
+}
 
-  .social-network a.icoGitLab:hover {
+.social-network a.icoGitLab:hover {
     background-color: #fc6d26;
-  }
+}
   
-  .social-network a.icoTwitter:hover {
+.social-network a.icoTwitter:hover {
     background-color: #1DA1F2;
-  }
+}
 
   .social-network a.icoFacebook:hover {
     background-color: #3b5998;
-  }
+}
 
-  .social-network a.icoGoogle:hover {
+.social-network a.icoGoogle:hover {
     background-color: #de5246;
-  }
+}
 
-  .social-network a.icoGitHub:hover i,
-  .social-network a.icoLinkedin:hover i,
-  .social-network a.icoGitHub:hover i,
-  .social-network a.icoTwitter:hover i,
-  .social-network a.icoFacebook:hover i,
-  .social-network a.icoGoogle:hover i {
+.social-network a.icoGitHub:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoGitHub:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoGoogle:hover i {
     color: #fff;
-  }
+}
   
-  .social-network a.socialIcon:hover,
-  .socialHoverClass {
+.social-network a.socialIcon:hover,
+.socialHoverClass {
     color: #44BCDD;
-  }
+}
   
-  .social-circle li a {
+.social-circle li a {
     display: inline-block;
     position: relative;
     margin: 0 auto 0 auto;
@@ -100,16 +100,16 @@ footer {
     width: 30px;
     height: 30px;
     font-size: 15px;
-  }
+}
   
-  .social-circle li i {
+.social-circle li i {
     margin: 0;
     line-height: 30px;
     text-align: center;
-  }
+}
   
-  .social-circle li a:hover i,
-  .triggeredHover {
+.social-circle li a:hover i,
+.triggeredHover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms--transform: rotate(360deg);
@@ -119,24 +119,18 @@ footer {
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
     transition: all 0.2s;
-  }
+}
   
-  .social-circle i {
+.social-circle i {
     color: #595959;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
     -ms-transition: all 0.8s;
     transition: all 0.8s;
-  }
+}
   
-  .social-network a {
+.social-network a {
     background-color: #F9F9F9;
-  }
+}
   
-  /* .flex-wrap-foot{
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  } */

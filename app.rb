@@ -41,9 +41,6 @@ class Application < Sinatra::Base
     erb :contact
   end
 
-  get '/coffee' do
-    erb :coffee
-  end
   
 
 
