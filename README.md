@@ -11,4 +11,4 @@ Stuff used:
 - bootstrap versions in 4.x and 5.x
 - footer https://codepen.io/NamiqNamaz/pen/QZYyEq
 - background https://github.com/VincentGarreau/particles.js/
-- 
+- Dockerfile included
