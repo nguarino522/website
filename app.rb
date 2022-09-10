@@ -1,4 +1,6 @@
 require 'sinatra'
+require 'rubygems'
+require 'bundler/setup'
 
 # require "erb"
 # configure { set :server, :puma }
