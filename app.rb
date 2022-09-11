@@ -8,12 +8,12 @@ require 'bundler/setup'
 
 class Application < Sinatra::Base
   
-  # def https_required!
-  #   if settings.production? && request.scheme == 'http'
-  #       headers['Location'] = request.url.sub('http', 'https')
-  #       halt 301, "https required\n"
-  #   end
-  # end
+  def https_required!
+    if settings.production? && request.scheme == 'http'
+        headers['Location'] = request.url.sub('http', 'https')
+        halt 301, "https required\n"
+    end
+  end
 
   before "/*" do
     https_required!
